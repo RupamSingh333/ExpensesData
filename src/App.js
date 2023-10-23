@@ -35,6 +35,7 @@ function App() {
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       <Expenses items={expenses} />
+      Rupam
     </div>
   );
 }
