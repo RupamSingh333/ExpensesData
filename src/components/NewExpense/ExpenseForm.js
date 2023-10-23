@@ -102,7 +102,6 @@ const ExpenseForm = (props) => {
             Cancel
           </button>
           <button type="submit">Add Expense</button>
-          <button type="submit">Testing</button>
         </div>
       </div>
     </form>
