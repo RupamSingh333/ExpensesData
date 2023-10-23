@@ -12,9 +12,9 @@ const ExpenseForm = (props) => {
   //   enterDate:''
   // });
 
-  const closed = () =>{
+  const closed = () => {
     props.closed(false);
-  }
+  };
 
   // props.onChangeFilter(event.target.value);
 
@@ -50,7 +50,7 @@ const ExpenseForm = (props) => {
     const expenseData = {
       id: Math.random().toString(36).substring(2, 5),
       title: enterTitle,
-      amount:+enterAmount,
+      amount: +enterAmount,
       date: new Date(enterDate),
     };
     props.onSaveExpenseData(expenseData);
@@ -98,8 +98,11 @@ const ExpenseForm = (props) => {
           />
         </div>
         <div className="new-expense__actions">
-          <button type="reset" onClick={closed}>Cancel</button>
+          <button type="reset" onClick={closed}>
+            Cancel
+          </button>
           <button type="submit">Add Expense</button>
+          <button type="submit">Testing</button>
         </div>
       </div>
     </form>
