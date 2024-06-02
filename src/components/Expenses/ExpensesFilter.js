@@ -6,12 +6,16 @@ const ExpensesFilter = (props) => {
     props.onChangeFilter(event.target.value);
   };
 
+  const currentYear = new Date().getFullYear();
+
+
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by Years ({props.totalExpenses})</label>
         <select onChange={yearChangeHandler} value={props.selected}>
           <option value="all">All</option>
+          <option value={currentYear}>{currentYear}</option>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
           <option value="2021">2021</option>
